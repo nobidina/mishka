@@ -1,0 +1,23 @@
+.catalog {
+  .content-container();
+  padding-top: 30px;
+  &__link {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+@media @tablet-widths {
+  .catalog {
+    padding-top: 69px;
+  }
+}
+
+@media @desktop-widths {
+  .catalog {
+    display: flex;
+    justify-content: space-between;
+    width: 1050px;
+    padding-top: 125px;
+  }
+}

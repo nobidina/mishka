@@ -1,0 +1,65 @@
+.main-header {
+  position: relative;
+  &__logo {
+    width: 88px;
+    height: 37px;
+    margin: 21px auto;
+  }
+  &__logo-img:hover {
+    opacity: 0.6;
+  }
+  &__logo-img:active {
+    opacity: 0.3;
+  }
+  &__text {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+  .main-header {
+    border: none;
+    &__logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 111px;
+      height: 46px;
+      padding: 22px 209px 20px 50px;
+      margin: 0;
+      border-right: 1px solid #ececec;
+    }
+    &__text {
+      position: absolute;
+      z-index: 200;
+      left: 366px;
+      bottom: 0;
+      display: block;
+      box-sizing: border-box;
+      width: 402px;
+      padding: 16px 50px 19px 121px;
+      font-size: 15px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .main-header {
+    width: 1150px;
+    &__logo {
+      width: 154px;
+      height: 74px;
+      top: 0;
+      left: 50%;
+      margin-left: -75px;
+      padding: 8px 0;
+      border: none;
+    }
+    &__text {
+      left: 869px;
+      bottom: -20px;
+      width: 281px;
+      padding: 16px 0 19px 0;
+    }
+  }
+}

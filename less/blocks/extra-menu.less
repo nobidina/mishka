@@ -1,0 +1,31 @@
+.extra-menu {
+  display: none;
+}
+
+@media @desktop-widths {
+
+  .extra-menu {
+    position: relative;
+    z-index: 200;
+    display: block;
+    &__list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+    &__link {
+      box-sizing: border-box;
+      width: 220px;
+      padding: 34px 10px 28px 50px;
+      text-decoration: none;
+      font-family: @font-bold;
+      color: #000;
+      &:hover {
+        color: rgba(0, 0, 0, 0.6);
+      }
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}

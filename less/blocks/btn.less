@@ -1,0 +1,90 @@
+.btn {
+  cursor: pointer;
+  outline: none;
+  width: 260px;
+  box-sizing: border-box;
+  padding: 15px 0;
+  border: 2px solid #000;
+  background: none;
+  text-align: center;
+  font-family: @font-bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444;
+  &_margin {
+    margin: 0 30px;
+  }
+  &_margin2 {
+    margin: 0 32px;
+  }
+  &_green {
+    border: none;
+    font-size: 17px;
+    line-height: 16px;
+    color: #fff;
+    background-color: #63d1bb;
+  }
+  &:hover {
+    border: 2px solid #444;
+    background-color: #444;
+    color: #fff;
+  }
+  &:active {
+    color: #8d8d8d;
+  }
+}
+
+@media @tablet-widths {
+  .btn {
+    width: 293px;
+    margin: 0;
+    line-height: 16px;
+    &_small {
+      position: absolute;
+      top: 80px;
+      right: 50px;
+      width: 175px;
+    }
+    &_margin {
+      width: 230px;
+      margin: 0 270px;
+      padding-top: 17px;
+    }
+    &_margin2 {
+      order: 2;
+      width: 585px;
+      margin: 0 auto;
+    }
+    &_submit {
+      position: absolute;
+      left: 50px;
+      bottom: 20px;
+      width: 230px;
+    }
+    &_green {
+      width: 350px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .btn {
+    &_small {
+      right: 0;
+    }
+    &_margin {
+      margin: 0 4px;
+    }
+    &_margin2 {
+      width: 230px;
+      padding-bottom: 17px;
+      margin-left: 760px;
+      margin-bottom: 59px;
+    }
+     &_submit {
+      left: 225px;
+      bottom: 19px;
+    }
+  }
+}

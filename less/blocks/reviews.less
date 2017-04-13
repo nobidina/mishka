@@ -1,0 +1,117 @@
+.reviews {
+  .content-container();
+  position: relative;
+  padding-bottom: 50px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    display: block;
+    width: 320px;
+    height: 7px;
+    background: url("../img/bg-zigzag-line.svg") -7px 0;
+    background-size: 100% 100%;
+  }
+  &__title {
+    margin: 0 0 23px 0;
+    font-family: @font-bold;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  &__toggle-wrapper {
+    display: flex;
+    margin-bottom: 38px;
+  }
+  &__toggle {
+    cursor: pointer;
+    outline: none;
+    width: 158px;
+    height: 52px;
+    padding: 0;
+    border: 1px solid #ececec;
+    background: none;
+    &:hover {
+      fill: #666;
+    }
+    &:active {
+      fill: #b2b2b2;
+    }
+    &_right {
+      margin-left: -1px;
+    }
+  }
+}
+
+@media @tablet-widths {
+  .reviews {
+    width: 768px;
+    margin-top: 5px;
+    padding-top: 77px;
+    background: url("../img/review@1x.jpg") no-repeat;
+    background-size: 350px 460px;
+    &::after {
+      width: 768px;
+      height: 20px;
+      left: 0;
+      bottom: -80px;
+      background: url("../img/bg-zigzag-line.svg") -22px 0;
+      background-size: 100% 100%;
+    }
+    &__title {
+      margin: 0 0 48px 46px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+    &__toggle-wrapper {
+      position: absolute;
+      right: 65px;
+      bottom: 52px;
+      margin: 0;
+      width: 140px;
+    }
+    &__toggle {
+      width: 70px;
+      border: none;
+      &_right {
+        margin-left: 35px;
+      }
+    }
+  }
+  @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+    .reviews {
+      background: url("../img/review@2x.jpg") no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .reviews {
+    width: 1050px;
+    padding-top: 70px;
+    padding-bottom: 95px;
+    background-size: 350px 460px;
+    &__title {
+      margin: 0 0 50px 173px;
+      font-size: 53px;
+      line-height: 57px;
+    }
+    &::after {
+      width: 1150px;
+      height: 23px;
+      left: -50px;
+      bottom: -88px;
+      background: url("../img/bg-zigzag-line.svg") -27px 0;
+    }
+    &__toggle-wrapper {
+      right: -15px;
+      bottom: 97px;
+      width: 170px;
+    }
+    &__toggle {
+      width: 50px;
+    }
+  }
+}

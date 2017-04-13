@@ -1,0 +1,84 @@
+.video-block {
+  .content-container();
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 30px 0 32px 0;
+  margin-bottom: 58px;
+  border: 1px solid #ededed;
+  &:hover {
+    box-shadow: 0 10px 20px 0 #ececec;
+  }
+  &:active {
+    box-shadow: 0 5px 10px 0 #ececec;
+  }
+  &__icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 33px;
+    margin-right: 24px;
+    background: url("../img/icons/icon-video.svg") no-repeat;
+    background-size: 32px 32px;
+  }
+  &__title {
+    width: 130px;
+    margin: -7px 0 24px 0;
+    font-family: @font-bold;
+    font-size: 17px;
+  }
+  &__text {
+    margin: 0 35px 25px 32px;
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+@media @tablet-widths {
+  .video-block {
+    margin-top: -2px;
+    margin-bottom: 64px;
+    padding: 0 0 46px 0;
+    &__icon {
+      order: 2;
+      margin-top: -5px;
+      margin-left: 41px;
+      margin-right: 34px;
+    }
+    &__title {
+      order: 2;
+      width: 559px;
+      margin-top: 0;
+      margin-bottom: 32px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__text {
+      order: 2;
+      width: 580px;
+      margin-left: 40px;
+      margin-bottom: 37px;
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .video-block {
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 106px;
+    &__icon {
+      margin: 42px 0 22px 760px;
+    }
+    &__title {
+      width: 156px;
+      margin-left: 760px;
+    }
+    &__text {
+      width: 225px;
+      margin-left: 760px;
+      margin-bottom: 46px;
+    }
+  }
+}

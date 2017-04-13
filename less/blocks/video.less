@@ -1,0 +1,75 @@
+.video {
+  position: relative;
+  width: 260px;
+  height: 150px;
+  padding: 0;
+  margin-bottom: 27px;
+  background: #ebebeb url("../img/video-mobile@1x.jpg") no-repeat;
+  background: cover;
+  &__btn-play {
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 101px;
+    height: 77px;
+    margin-top: -36px;
+    margin-left: -52px;
+    padding: 0;
+    border: none;
+    background: none;
+    &:hover {
+      margin-top: -46px;
+      margin-left: -60px;
+    }
+    &:hover svg {
+      width: 121px;
+      height: 93px;
+    }
+    &:active {
+      margin-top: -31px;
+      margin-left: -40px;
+    }
+    &:active svg {
+      width: 81px;
+      height: 62px;
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+  .video {
+      background: #ebebeb url("../img/video-mobile@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+@media @tablet-widths {
+  .video {
+    order: 1;
+    width: 668px;
+    height: 455px;
+    margin-bottom: 38px;
+    background: #ebebeb url("../img/video-tablet@1x.jpg") no-repeat;
+  }
+}
+
+@media @desktop-widths {
+  .video {
+    order: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 680px;
+    height: 455px;
+    background: #ebebeb url("../img/video-desktop@1x.jpg") no-repeat;
+    background-size: cover;
+    &__btn-play {
+      margin-top: -40px;
+      margin-left: -43px;
+    }
+  }
+}

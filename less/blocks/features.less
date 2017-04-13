@@ -1,0 +1,168 @@
+.features {
+  .content-container();
+  position: relative;
+  padding-top: 9px;
+  padding-bottom: 23px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    display: block;
+    width: 320px;
+    height: 7px;
+    background: url("../img/bg-zigzag-line.svg") -7px 0;
+    background-size: 100% 100%;
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-family: @font-bold;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__icon {
+    &_feature1 {
+      width: 32px;
+      height: 38px;
+      margin-left: 7px;
+      margin-bottom: 17px;
+      background: url("../img/icons/icon-feature-1.svg") no-repeat;
+    }
+    &_feature2 {
+      width: 47px;
+      height: 28px;
+      margin-bottom: 26px;
+      background: url("../img/icons/icon-feature-2.svg") no-repeat;
+    }
+    &_feature3 {
+      width: 34px;
+      height: 28px;
+      margin-left: 7px;
+      margin-bottom: 24px;
+      background: url("../img/icons/icon-feature-3.svg") no-repeat;
+    }
+    &_feature4 {
+      width: 35px;
+      height: 35px;
+      margin-left: 4px;
+      margin-bottom: 17px;
+      background: url("../img/icons/icon-feature-4.svg") no-repeat;
+    }
+    &_feature5 {
+      width: 55px;
+      height: 24px;
+      margin-left: -6px;
+      margin-bottom: 28px;
+      background: url("../img/icons/icon-feature-5.svg") no-repeat;
+    }
+     &_feature6 {
+      width: 33px;
+      height: 33px;
+      margin-bottom: 19px;
+      background: url("../img/icons/icon-feature-6.svg") no-repeat;
+    }
+  }
+  &__text {
+    width: 210px;
+    font-family: @font-bold;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 31px;
+    &_wide {
+      width: 260px;
+    }
+  }
+}
+
+@media @tablet-widths {
+  .features {
+    padding-top: 69px;
+    &::before {
+      left: -50px;
+      width: 768px;
+      height: 20px;
+      background: url("../img/bg-zigzag-line.svg") -17px 0;
+      background-size: 100% 100%;
+    }
+    &__title {
+      margin: 0 0 50px -5px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+    &__list {
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__item {
+      width: 50%;
+      margin-bottom: 21px;
+      &_feature1 {
+        order: 1;
+      }
+      &_feature2 {
+        order: 3;
+      }
+      &_feature3 {
+        order: 5;
+      }
+      &_feature4 {
+        order: 2;
+      }
+      &_feature5 {
+        order: 4;
+      }
+      &_feature6 {
+        order: 6;
+      }
+    }
+    &__icon {
+      &_feature1 {
+        margin-bottom: -6px;
+      }
+      &_feature3 {
+        margin-top: 4px;
+        margin-bottom: -1px;
+      }
+      &_feature4 {
+        margin-bottom: -3px;
+      }
+      &_feature5 {
+        margin-top: 5px;
+      }
+    }
+    &__text {
+      width: 250px;
+      font-size: 20px;
+      line-height: 24px;
+      &_wide {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media @desktop-widths {
+  .features {
+    width: 700px;
+    margin-left: 225px;
+    padding-top: 106px;
+    padding-bottom: 30px;
+    &::before {
+      top: 22px;
+      left: -225px;
+      width: 1150px;
+      height: 23px;
+      background: url("../img/bg-zigzag-line.svg") -27px 0;
+    }
+    &__title {
+      font-size: 53px;
+      line-height: 57px;
+    }
+  }
+}

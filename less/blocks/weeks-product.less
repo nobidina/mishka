@@ -1,0 +1,127 @@
+.weeks-product {
+  .content-container();
+  padding-top: 28px;
+  padding-bottom: 35px;
+  &__title {
+    margin: 0 0 7px 0;
+    font-family: @font-bold;
+    font-size: 25px;
+    line-height: 30px;
+    &_blue {
+      margin-bottom: 25px;
+      font-family: @font-bold;
+      font-size: 17px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #35a999;
+    }
+  }
+  &__text {
+    margin-bottom: 18px;
+  }
+  &__table {
+    margin-bottom: 28px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    line-height: 20px;
+  }
+  &__table-cell {
+    padding: 8px 29px 11px 0;
+    border-bottom: 1px solid #ececec;
+  }
+  &__img-wrapper {
+    width: 260px;
+    margin-bottom: 19px;
+  }
+  &__price {
+    margin-bottom: 25px;
+    font-family: @font-bold;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+@media @tablet-widths {
+  .weeks-product {
+    position: relative;
+    padding-right: 5px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    &__title-wrapper {
+      text-align: center;
+    }
+    &__title {
+      margin: 0 0 48px 0;
+      font-size: 43px;
+      line-height: 50px;
+      &_blue {
+        position: absolute;
+        top: 47px;
+        right: 28px;
+        width: 75px;
+        font-size: 17px;
+        line-height: 16px;
+      }
+    }
+    &__text {
+      width: 290px;
+      margin: 0 380px 37px 0;
+      font-size: 17px;
+      line-height: 30px;
+    }
+    &__table {
+      width: 290px;
+      margin: 0 380px 55px 2px;
+    }
+     &__table-cell {
+      padding: 8px 0px 11px 0;
+    }
+    &__img-wrapper {
+      position: absolute;
+      top: 140px;
+      right: 2px;
+      width: 333px;
+      margin: 0;
+    }
+    &__img {
+      width: 100%;
+    }
+    &__price {
+      width: 290px;
+      margin-left: 6px;
+      margin-bottom: 35px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .weeks-product {
+    width: 875px;
+    padding-top: 46px;
+    margin: 0 48px 0 224px;
+    &__title {
+      font-size: 53px;
+      line-height: 57px;
+      &_blue {
+        top: 62px;
+        left: -129px;
+        font-size: 17px;
+        line-height: 16px;
+      }
+    }
+    &__text {
+      margin-bottom: 49px;
+    }
+    &__table {
+      margin-bottom: 109px;
+    }
+    &__img-wrapper {
+      top: -5px;
+      z-index: -1;
+      width: 525px;
+    }
+  }
+}
